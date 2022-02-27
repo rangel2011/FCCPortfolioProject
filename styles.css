@@ -1,9 +1,11 @@
 /* Custom properties/variables  */
 :root {
     --main-white: #f4f6fc;
-    --main-red: #be3144;
-    --main-blue: #45567d;
+    --main-blue: #0000FF;
     --main-gray: #303841;
+    --main-darkblue: #050A30;
+    --main-navy: #000C66;
+    --main-babyblue: #7EC8e3;
   }
   
   /* Base reset */
@@ -69,7 +71,7 @@
   /* Base styles */
   
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
@@ -78,7 +80,7 @@
   
   h1,
   h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-align: center;
   }
@@ -114,7 +116,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main-red);
+    background: var(--main-darkblue);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
   }
@@ -141,7 +143,7 @@
   }
   
   .nav-list a:hover {
-    background: var(--main-blue);
+    background: var(--main-gray);
   }
   
   /* Welcome section */
@@ -154,14 +156,14 @@
     width: 100%;
     height: 100vh;
     background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-image: linear-gradient(62deg, #303841 0%, #000 100%);
   }
   
   .welcome-section > p {
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-red);
+    color: var(--main-white);
   }
   
   /* Projects section */
@@ -169,7 +171,7 @@
   .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--main-blue);
+    background: var(--main-darkblue);
   }
   
   .projects-section-header {
@@ -217,7 +219,7 @@
   }
   
   .project:hover .code {
-    color: #ff7f50;
+    color: var(--main-babyblue);
   }
   
   .project-image {
@@ -244,7 +246,7 @@
   }
   
   .btn-show-all:hover {
-    background: var(--main-red);
+    background: var(--main-gray);
   }
   
   .btn-show-all:hover > i {
@@ -268,7 +270,8 @@
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: var(--main-gray);
+    background-color: #000;
+    background-image: linear-gradient(62deg, #303841 0%, #000 100%);
   }
   
   .contact-section-header > h2 {
@@ -311,8 +314,8 @@
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: var(--main-gray);
-    border-top: 4px solid var(--main-red);
+    background: var(--main-navy);
+    border-top: 4px solid var(--main-gray);
   }
   
   footer > p {
